@@ -2,30 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spieler : MonoBehaviour
+public class Spieli : MonoBehaviour
 {
-    public float geschwindigkeit = 9.0f;
+    public float geschwindigkeit = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+
+    }   
 
     // Update is called once per frame
     void Update()
     {
-     if(Input.GetKey("up")){
+     if(Input.GetKey("w")){
      transform.Translate(Vector2.up*Time.deltaTime*geschwindigkeit);
      }
-     if(Input.GetKey("down")){
+     if(Input.GetKey("s")){
      transform.Translate(Vector2.down*Time.deltaTime*geschwindigkeit);
      }
-     if(Input.GetKey("left")){
+     if(Input.GetKey("a")){
      transform.Translate(Vector2.left*Time.deltaTime*geschwindigkeit);
     }
-    if(Input.GetKey("right")){
+    if(Input.GetKey("d")){
      transform.Translate(Vector2.right*Time.deltaTime*geschwindigkeit);
     }
-
+        
     }
-}
+    
+        
+    }
+
