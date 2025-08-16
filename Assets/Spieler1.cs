@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spieler : MonoBehaviour
+public class Spieler1 : MonoBehaviour
 {
     
     public float Geschwindigkeit = 3f;
