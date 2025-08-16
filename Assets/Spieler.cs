@@ -5,6 +5,8 @@ using UnityEngine;
 public class Spieler : MonoBehaviour
 {
     public float geschwindigkeit = 9.0f;
+    public SpriteRenderer spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +24,12 @@ public class Spieler : MonoBehaviour
      }
      if(Input.GetKey("left")){
      transform.Translate(Vector2.left*Time.deltaTime*geschwindigkeit);
+     spriteRenderer.flipX = false;
     }
     if(Input.GetKey("right")){
      transform.Translate(Vector2.right*Time.deltaTime*geschwindigkeit);
+     spriteRenderer.flipX = true;
+
     }
 
     }
