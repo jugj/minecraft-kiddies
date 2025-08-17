@@ -39,7 +39,7 @@ public class Seure : MonoBehaviour {
 
     }
     private IEnumerator TeleportAfterDelay(GameObject player) {
-                        yield return new WaitForSeconds(2f); // 2 Sekunden warten
+                        yield return new WaitForSeconds(2f); // 1 Sekunden warten
                         player.transform.position = new Vector3(-15.25f, 2.14f , 0f);
     }
 }
