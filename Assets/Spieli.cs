@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spieli : MonoBehaviour
 {
     public float geschwindigkeit = 5.0f;
+    public SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +23,11 @@ public class Spieli : MonoBehaviour
      }
      if(Input.GetKey("a")){
      transform.Translate(Vector2.left*Time.deltaTime*geschwindigkeit);
+     spriteRenderer.flipX = false;
     }
     if(Input.GetKey("d")){
      transform.Translate(Vector2.right*Time.deltaTime*geschwindigkeit);
+     spriteRenderer.flipX = true;
     }
         
     }
